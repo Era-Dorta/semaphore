@@ -39,6 +39,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="semaphore.html">semaphore package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="semaphore.address.html">semaphore.Address</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.attachment.html">semaphore.Attachment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.bot.html">semaphore.Bot</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">semaphore.ChatContext</a></li>
@@ -48,13 +49,14 @@
 <li class="toctree-l2"><a class="reference internal" href="semaphore.groupV2.html">semaphore.GroupV2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.job_queue.html">semaphore.JobQueue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.job.html">semaphore.Job</a></li>
+<li class="toctree-l2"><a class="reference internal" href="semaphore.link_preview.html">semaphore.LinkPreview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.message_receiver.html">semaphore.MessageReceiver</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.message_sender.html">semaphore.MessageSender</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.message.html">semaphore.Message</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.reply.html">semaphore.Reply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.socket.html">semaphore.Socket</a></li>
-<li class="toctree-l2"><a class="reference internal" href="semaphore.sticker.html">semaphore.Sticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.sticker_pack.html">semaphore.StickerPack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="semaphore.sticker.html">semaphore.Sticker</a></li>
 </ul>
 </li>
 </ul>
@@ -88,7 +90,7 @@
 <h1>semaphore.ChatContext<a class="headerlink" href="#semaphore-chatcontext" title="Permalink to this headline"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="semaphore.ChatContext">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">semaphore.</span></span><span class="sig-name descname"><span class="pre">ChatContext</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">match</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_queue</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bot</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/semaphore/chat_context.html#ChatContext"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#semaphore.ChatContext" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">semaphore.</span></span><span class="sig-name descname"><span class="pre">ChatContext</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="semaphore.message.html#semaphore.Message" title="semaphore.message.Message"><span class="pre">semaphore.message.Message</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">match</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Match</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_queue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="semaphore.job_queue.html#semaphore.JobQueue" title="semaphore.job_queue.JobQueue"><span class="pre">semaphore.job_queue.JobQueue</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">bot</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="semaphore.bot.html#semaphore.Bot" title="semaphore.Bot"><span class="pre">Bot</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/semaphore/chat_context.html#ChatContext"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#semaphore.ChatContext" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>This object represents the context of a chat.</p>
 </dd></dl>
@@ -106,7 +108,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020-2021, Lazlo Westerhof.</p>
+    <p>&#169; Copyright 2020-2022, Lazlo Westerhof.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

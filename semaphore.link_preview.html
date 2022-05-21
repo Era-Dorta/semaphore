@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>semaphore package &mdash; Semaphore  documentation</title>
+  <title>semaphore.LinkPreview &mdash; Semaphore  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="semaphore.Address" href="semaphore.address.html" />
-    <link rel="prev" title="Semaphore technical documentation" href="index.html" /> 
+    <link rel="next" title="semaphore.MessageReceiver" href="semaphore.message_receiver.html" />
+    <link rel="prev" title="semaphore.Job" href="semaphore.job.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -38,7 +38,7 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">semaphore package</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="semaphore.html">semaphore package</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="semaphore.address.html">semaphore.Address</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.attachment.html">semaphore.Attachment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.bot.html">semaphore.Bot</a></li>
@@ -49,7 +49,7 @@
 <li class="toctree-l2"><a class="reference internal" href="semaphore.groupV2.html">semaphore.GroupV2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.job_queue.html">semaphore.JobQueue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.job.html">semaphore.Job</a></li>
-<li class="toctree-l2"><a class="reference internal" href="semaphore.link_preview.html">semaphore.LinkPreview</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">semaphore.LinkPreview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.message_receiver.html">semaphore.MessageReceiver</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.message_sender.html">semaphore.MessageSender</a></li>
 <li class="toctree-l2"><a class="reference internal" href="semaphore.message.html">semaphore.Message</a></li>
@@ -75,9 +75,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>semaphore package</li>
+          <li><a href="semaphore.html">semaphore package</a> &raquo;</li>
+      <li>semaphore.LinkPreview</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/semaphore.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/semaphore.link_preview.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -85,39 +86,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-semaphore">
-<span id="semaphore-package"></span><h1>semaphore package<a class="headerlink" href="#module-semaphore" title="Permalink to this headline"></a></h1>
-<p>Semaphore: A simple (rule-based) bot library for Signal Private Messenger.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.address.html">semaphore.Address</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.attachment.html">semaphore.Attachment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.bot.html">semaphore.Bot</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.chat_context.html">semaphore.ChatContext</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.data_message.html">semaphore.DataMessage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.exceptions.html">semaphore.Exceptions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.group.html">semaphore.Group</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.groupV2.html">semaphore.GroupV2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.job_queue.html">semaphore.JobQueue</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.job.html">semaphore.Job</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.link_preview.html">semaphore.LinkPreview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.message_receiver.html">semaphore.MessageReceiver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.message_sender.html">semaphore.MessageSender</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.message.html">semaphore.Message</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.reply.html">semaphore.Reply</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.socket.html">semaphore.Socket</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.sticker_pack.html">semaphore.StickerPack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="semaphore.sticker.html">semaphore.Sticker</a></li>
-</ul>
-</div>
+  <section id="semaphore-linkpreview">
+<h1>semaphore.LinkPreview<a class="headerlink" href="#semaphore-linkpreview" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="semaphore.LinkPreview">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">semaphore.</span></span><span class="sig-name descname"><span class="pre">LinkPreview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attachment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="semaphore.attachment.html#semaphore.Attachment" title="semaphore.attachment.Attachment"><span class="pre">semaphore.attachment.Attachment</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/semaphore/link_preview.html#LinkPreview"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#semaphore.LinkPreview" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This object represents a Signal message link preview.</p>
+<p>The attributes have a 1 to 1 correspondance to the signald JsonPreview class
+<a class="reference external" href="https://signald.org/protocol/structures/v1/JsonPreview/">https://signald.org/protocol/structures/v1/JsonPreview/</a></p>
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Semaphore technical documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="semaphore.address.html" class="btn btn-neutral float-right" title="semaphore.Address" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="semaphore.job.html" class="btn btn-neutral float-left" title="semaphore.Job" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="semaphore.message_receiver.html" class="btn btn-neutral float-right" title="semaphore.MessageReceiver" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
